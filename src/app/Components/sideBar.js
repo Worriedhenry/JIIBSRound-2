@@ -3,7 +3,7 @@ import React from "react";
 export default function SideBar() {
     return (
         <div className="py-10 pl-6">
-            <ul className="gap-y-5 flex flex-col ">
+            <ul className="gap-y-5 flex flex-col overflow-x-hidden ">
                 <li className="flex items-center gap-x-4  hover:bg-gray-100 cursor-pointer py-2">
                     <img src="HouseHome.png" />
                     <p className="w-fit">Home</p>
