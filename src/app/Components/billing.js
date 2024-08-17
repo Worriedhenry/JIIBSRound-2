@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Billing() {
+export default function Billing({setIsModalOpen}) {
     return (
         <div className="py-6 gap-y-6 flex flex-col" >
             <h1 className="text-2xl font-bold md:text-3xl">Billing</h1>
@@ -20,7 +20,7 @@ export default function Billing() {
                     </div >
                     <div className="w-fit flex gap-x-4">
                         <p className="bg-green-100 text-green-600 rounded py-[2px] px-2 w-fit h-fit">Preferred</p>
-                        <img className="h-fit w-fit p-2 bg-gray-100 rounded-full" src="Pencil Icon.png" ></img>
+                         <img className="h-fit w-fit p-2 bg-gray-100 cursor-pointer rounded-full" src="Pencil Icon.png" onClick={() => setIsModalOpen(true)} ></img>
                     </div>
                 </div>
             </div>
